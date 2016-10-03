@@ -1,0 +1,54 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+ *= require_self
+ *= require devise_bootstrap_views
+ */
+
+
+
+@import url("//fonts.googleapis.com/css?family=Stalemate");
+//@import url("//fonts.googleapis.com/css?family=Montserrat: 400,700");
+//@import url("//fonts.googleapis.com/css?family=Amaranth");
+//@import url("//fonts.googleapis.com/css?family=Josefin+Sans:400");
+
+
+
+$brand-primary: lighten(#2980b9, 6.5%);
+$navbar-default-bg: #2980b9;
+$navbar-default-color: #ecf0f1;
+$navbar-default-link-color: #ecf0f1;
+$navbar-default-toggle-icon-bar-bg: #ecf0f1;
+$btn-hover-color: 'red' !default;
+//$font-family-sans-serif: 'StaleMate';
+
+
+
+
+
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+
+
+
+.pbtn {
+	color: #FFFFFF;
+	:hover {
+    	color: #FFFFFF;
+	}
+	:visited {
+    	color: #FFFFFF;
+	}
+}

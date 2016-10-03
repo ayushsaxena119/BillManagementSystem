@@ -1,0 +1,21 @@
+<%- model_class = Event -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+
+<ul class="list-group text-left">
+  <li class="list-group-item">
+    <span class="badge"><%= @events.count %></span>
+    Total Events
+  </li>
+</ul>
+
+<div class="text-center">
+<%= will_paginate @courses, renderer: BootstrapPagination::Rails, :class => "pagination pagination-centered" %>
+</div>
+
+<%= render 'events_panel' %>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_event_path,
+            :class => 'btn btn-primary' %>
